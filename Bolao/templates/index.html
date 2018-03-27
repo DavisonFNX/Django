@@ -1,0 +1,13 @@
+{% if partidas %}
+
+  <ul>
+  {% for partida in partidas %}
+    <li><a href="/partida/{{ partida.id }}/">{{ partida }}</a></li>
+  {% endfor %}
+  </ul>
+
+{% else %}
+
+  <p>Sem partidas.</p>
+
+{% endif %}
